@@ -4,7 +4,7 @@
 function difference(num1, num2) {
   if (num1 === undefined) num1 = 0
   if (num2 === undefined) num2 = 0
-  return num1 + num2;
+  return num1 - num2;
 }
 
 // ==================================================
@@ -16,14 +16,14 @@ try {
   // --------------------------------------------------
   // It should return the difference of two numbers.
   var result = difference(1, 1);
-  if (result !== 2) throw new Error('Expected difference(1, 1) to be 2. Received: ' + result);
+  if (result !== 0) throw new Error('Expected difference(1, 1) to be 0. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
   var result = difference(1, 1, 1, 1, 1, 1);
-  if (result !==2) throw new Error('Expected sum(1, 1, 1, 1, 1, 1,) to be 2. Received :' + result);
+  if (result !==0) throw new Error('Expected sum(1, 1, 1, 1, 1, 1,) to be 0. Received :' + result);
 
   // --------------------------------------------------
   // Test Case 3
